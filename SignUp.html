@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Quicksand:wght@700&family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+  </head>
+<body>
+  <header>
+          <img src="logogaming2.jpg" class="logo">
+          <nav>
+            <ul>
+                <li href="index.html">Inicio</li>
+                <li href="jueguitos.html">Análisis</li>
+                <li>PC</li>
+                <li>Playstation</li>
+                <li>Xbox</li>
+                <li>Sobre mí</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+  </header>
+         <div class="mainSignUp">
+            <div class="formContainer">
+                <form id="form">
+                  <!-- Correo Electrónico -->
+                <label class="label">Correo Eléctronico</label>
+                <input type="email"  id="mail">
+                  <!-- Contraseña -->
+                <label class="label">Contraseña</label>
+                <input type="password" id="password">
+                  <!-- Repetir Contraseña -->
+                <label class="label">Repetir contraseña</label>
+                <input type="password" id="password">
+                  <!-- Fecha de nacimiento -->
+                <label class="label">Fecha de nacimiento</label>
+                <input type="date" id="date" value="2022-01-01" min="1900-01-01" max="2022-01-01"> 
+                  <!-- Terminos y condiciones -->
+                <div class="checkContainer">
+                  <input type="checkbox" id="terms"><label class="label">He leído y entiendo las condiciones de uso</label>
+                </div>
+                <button type="submit" class="btn-submit" id="submit">Enviar</button> 
+                </form>                          
+            </div>
+         </div>     
+</body>
+  <script src="scripts.js"></script>
+</html>

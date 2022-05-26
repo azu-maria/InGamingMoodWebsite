@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+ 
+/* Index */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    width: 1920px;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: 1920px;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1920px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 0 2px #ffffff;
+    border-bottom-width: thin;
+    border-color: #000;
+}
+
+ul{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    padding: 5px;
+}
+
+li{
+    margin: 10px;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Raleway';
+    color:#000000;
+}
+
+li:hover{
+    margin: 10px;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Raleway';
+    color:#ffffff;
+    transition-duration:2s;
+    cursor: pointer;
+    background-color: rgb(130, 70, 158);
+    border-radius: 10px;
+    transform:translateY(-15px)
+}
+
+li::before {
+    font-family: "FontAwesome";
+    content: "\f107";
+    margin: 10px;
+    font-size: small;
+}
+
+.signUp{
+    color: blueviolet;
+    font-family: 'Raleway';
+    padding: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.signUp::after{
+    color: blueviolet;
+    font-family: 'FontAwesome';
+    content: '\f090';
+    padding: 20px;
+}
+
+.imgMain{
+    background-image: url(imgBackground/background.jpg);
+    height: 468px;
+    width: 1920px;
+}
+
+.imgMain1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+
+.imgMain2{
+    background-image: url(imgBackground/background2.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    padding-right: 80px;
+    height: 598px;
+}
+
+.imgMain3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    display: flex;
+   justify-content: space-between;
+}
+
+article{
+    margin: 30px;
+    padding: 50px;
+ }
+ 
+ h1{
+     font-size: 70px;
+     font-family: 'Raleway';
+     color: white;
+     margin: 10px;
+ }
+ h2{
+    font-size: 70px;
+    font-family: 'Raleway';
+    color: rgb(130, 70, 158);
+    text-align: left;
+    margin: 10px;
+}
+
+h2:hover{
+    font-size: 70px;
+    font-family: 'Raleway';
+    color: rgb(130, 70, 158);
+    justify-content: start;
+    margin: 10px;
+}
+ 
+ p{
+     font-size: 20px;
+     font-family: 'Raleway';
+     color: white;
+     text-align: center;
+ }
+ 
+ .p2{
+     font-size: 20px;
+     font-family: 'Raleway';
+     color: rgb(0, 0, 0);
+     text-align: center;
+     width: 50%;
+ }
+.cardContainer{
+    display: flex;
+    margin: 50px;
+}
+
+.cardContainer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gamecard{
+    border-radius: 20px;
+    width: 200px;
+    height: 241px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.gamecard:hover{
+    border-radius: 20px;
+    width: 200px;
+    height: 241px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform:translateY(-20px);
+    transition:1s;
+}
+
+/* Sign up */
+
+.mainSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin:40px;
+}
+
+.formContainer{
+    width: 700px;
+    height: 600px;
+    padding: 40px;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(145, 145, 145, 0.6);
+    border-radius: 10px;
+    background-image: url(imgBackground/formbackground.jpg);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background: transparent;
+}
+
+.btn-submit{
+    background: blueviolet;
+    border: blueviolet ;
+    border-radius: 6px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Quicksand';
+    font-size: larger;
+    color: rgb(250, 250, 250);
+}
+
+.btn-submit:hover{
+    background: blueviolet;
+    border-radius: 6px;
+    width: 120px;
+    height: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    display: inline-block;
+    color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;;
+}
+
+.label{
+    font-family: 'Raleway';
+    font-size: larger;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.checkContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
